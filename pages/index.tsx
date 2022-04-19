@@ -152,28 +152,711 @@ export default function Home() {
                 </button>
               </div>
               <div>
-                <button className="ml-5 pl-2 pr-4 py-2 rounded-md flex items-center text-sm font-medium text-white bg-gradient-to-r from-purple-700 to-blue-500 ">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth={2}
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M12 4v16m8-8H4"
-                  />
-                </svg>
-                <span>New Item</span>
+                <button className="ml-5 flex items-center rounded-md bg-gradient-to-r from-purple-700 to-blue-500 py-2 pl-2 pr-4 text-sm font-medium text-white ">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    strokeWidth={2}
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M12 4v16m8-8H4"
+                    />
+                  </svg>
+                  <span>New Item</span>
                 </button>
               </div>
             </div>
           </div>
         </header>
-        <div>Main</div>
+        <div className="flex-1 overflow-auto bg-gray-50">
+          <main className="inline-flex h-full space-x-2 p-3">
+            <div className="flex w-80 flex-col rounded-md bg-transparent">
+              <h3 className="text-md px-3 pt-3 pb-1 font-mono font-medium leading-tight text-gray-700">
+                Todo
+              </h3>
+              <div className="min-h-0 flex-1">
+                <ul className="px-3 pt-1 pb-3">
+                  <li>
+                    <a
+                      href="#"
+                      className="block rounded-md bg-white p-5 shadow"
+                    >
+                      <div>
+                        <div className="flex items-baseline justify-between">
+                          <div className="rounded bg-blue-200 px-3 py-1">
+                            <span className="text-sm font-medium leading-tight text-blue-500">
+                              DESIGN
+                            </span>
+                          </div>
+                          <div className="flex items-center text-sm text-gray-400">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              className="h-4 w-4"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke="currentColor"
+                              strokeWidth={2}
+                            >
+                              <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                d="M15.172 7l-6.586 6.586a2 2 0 102.828 2.828l6.414-6.586a4 4 0 00-5.656-5.656l-6.415 6.585a6 6 0 108.486 8.486L20.5 13"
+                              />
+                            </svg>
+                            <span>2</span>
+                          </div>
+                        </div>
+                        <div className="mt-3">
+                          <p className="text-sm text-gray-800">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Ea, saepe!
+                          </p>
+                        </div>
+                        <div className="mt-3">
+                          <div className="mt-3 flex items-center">
+                            <span className="rounded-full border-2 border-white">
+                              <img
+                                src="https://images.unsplash.com/photo-1523419409543-a5e549c1faa8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2.25&w=144&q=144"
+                                alt="avatar"
+                                className="h-6 w-6 rounded-full object-cover"
+                              />
+                            </span>
+                            <span className="-ml-2 rounded-full border-2 border-white">
+                              <img
+                                src="https://images.unsplash.com/photo-1523419409543-a5e549c1faa8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2.25&w=144&q=144"
+                                alt="avatar"
+                                className="h-6 w-6 rounded-full object-cover"
+                              />
+                            </span>
+                            <span className="-ml-2 rounded-full border-2 border-white">
+                              <img
+                                src="https://images.unsplash.com/photo-1523419409543-a5e549c1faa8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2.25&w=144&q=144"
+                                alt="avatar"
+                                className="h-6 w-6 rounded-full object-cover"
+                              />
+                            </span>
+                            <span className="-ml-2 rounded-full border-2 border-white">
+                              <img
+                                src="https://images.unsplash.com/photo-1523419409543-a5e549c1faa8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2.25&w=144&q=144"
+                                alt="avatar"
+                                className="h-6 w-6 rounded-full object-cover"
+                              />
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      className="block rounded-md bg-white p-5 shadow mt-3"
+                    >
+                      <div>
+                        <div className="flex items-baseline justify-between">
+                          <div className="rounded bg-blue-200 px-3 py-1">
+                            <span className="text-sm font-medium leading-tight text-blue-500">
+                              DESIGN
+                            </span>
+                          </div>
+                          <div className="flex items-center text-sm text-gray-400">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              className="h-4 w-4"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke="currentColor"
+                              strokeWidth={2}
+                            >
+                              <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                d="M15.172 7l-6.586 6.586a2 2 0 102.828 2.828l6.414-6.586a4 4 0 00-5.656-5.656l-6.415 6.585a6 6 0 108.486 8.486L20.5 13"
+                              />
+                            </svg>
+                            <span>2</span>
+                          </div>
+                        </div>
+                        <div className="mt-3">
+                          <p className="text-sm text-gray-800">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Ea, saepe!
+                          </p>
+                        </div>
+                        <div className="mt-3">
+                          <div className="mt-3 flex items-center">
+                            <span className="rounded-full border-2 border-white">
+                              <img
+                                src="https://images.unsplash.com/photo-1523419409543-a5e549c1faa8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2.25&w=144&q=144"
+                                alt="avatar"
+                                className="h-6 w-6 rounded-full object-cover"
+                              />
+                            </span>
+                            <span className="-ml-2 rounded-full border-2 border-white">
+                              <img
+                                src="https://images.unsplash.com/photo-1523419409543-a5e549c1faa8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2.25&w=144&q=144"
+                                alt="avatar"
+                                className="h-6 w-6 rounded-full object-cover"
+                              />
+                            </span>
+                            <span className="-ml-2 rounded-full border-2 border-white">
+                              <img
+                                src="https://images.unsplash.com/photo-1523419409543-a5e549c1faa8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2.25&w=144&q=144"
+                                alt="avatar"
+                                className="h-6 w-6 rounded-full object-cover"
+                              />
+                            </span>
+                            <span className="-ml-2 rounded-full border-2 border-white">
+                              <img
+                                src="https://images.unsplash.com/photo-1523419409543-a5e549c1faa8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2.25&w=144&q=144"
+                                alt="avatar"
+                                className="h-6 w-6 rounded-full object-cover"
+                              />
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      className="block rounded-md bg-white p-5 shadow mt-3"
+                    >
+                      <div>
+                        <div className="flex items-baseline justify-between">
+                          <div className="rounded bg-blue-200 px-3 py-1">
+                            <span className="text-sm font-medium leading-tight text-blue-500">
+                              DESIGN
+                            </span>
+                          </div>
+                          <div className="flex items-center text-sm text-gray-400">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              className="h-4 w-4"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke="currentColor"
+                              strokeWidth={2}
+                            >
+                              <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                d="M15.172 7l-6.586 6.586a2 2 0 102.828 2.828l6.414-6.586a4 4 0 00-5.656-5.656l-6.415 6.585a6 6 0 108.486 8.486L20.5 13"
+                              />
+                            </svg>
+                            <span>2</span>
+                          </div>
+                        </div>
+                        <div className="mt-3">
+                          <p className="text-sm text-gray-800">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Ea, saepe!
+                          </p>
+                        </div>
+                        <div className="mt-3">
+                          <div className="mt-3 flex items-center">
+                            <span className="rounded-full border-2 border-white">
+                              <img
+                                src="https://images.unsplash.com/photo-1523419409543-a5e549c1faa8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2.25&w=144&q=144"
+                                alt="avatar"
+                                className="h-6 w-6 rounded-full object-cover"
+                              />
+                            </span>
+                            <span className="-ml-2 rounded-full border-2 border-white">
+                              <img
+                                src="https://images.unsplash.com/photo-1523419409543-a5e549c1faa8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2.25&w=144&q=144"
+                                alt="avatar"
+                                className="h-6 w-6 rounded-full object-cover"
+                              />
+                            </span>
+                            <span className="-ml-2 rounded-full border-2 border-white">
+                              <img
+                                src="https://images.unsplash.com/photo-1523419409543-a5e549c1faa8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2.25&w=144&q=144"
+                                alt="avatar"
+                                className="h-6 w-6 rounded-full object-cover"
+                              />
+                            </span>
+                            <span className="-ml-2 rounded-full border-2 border-white">
+                              <img
+                                src="https://images.unsplash.com/photo-1523419409543-a5e549c1faa8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2.25&w=144&q=144"
+                                alt="avatar"
+                                className="h-6 w-6 rounded-full object-cover"
+                              />
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      className="block rounded-md bg-white p-5 shadow mt-3"
+                    >
+                      <div>
+                        <div className="flex items-baseline justify-between">
+                          <div className="rounded bg-blue-200 px-3 py-1">
+                            <span className="text-sm font-medium leading-tight text-blue-500">
+                              DESIGN
+                            </span>
+                          </div>
+                          <div className="flex items-center text-sm text-gray-400">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              className="h-4 w-4"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke="currentColor"
+                              strokeWidth={2}
+                            >
+                              <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                d="M15.172 7l-6.586 6.586a2 2 0 102.828 2.828l6.414-6.586a4 4 0 00-5.656-5.656l-6.415 6.585a6 6 0 108.486 8.486L20.5 13"
+                              />
+                            </svg>
+                            <span>2</span>
+                          </div>
+                        </div>
+                        <div className="mt-3">
+                          <p className="text-sm text-gray-800">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Ea, saepe!
+                          </p>
+                        </div>
+                        <div className="mt-3">
+                          <div className="mt-3 flex items-center">
+                            <span className="rounded-full border-2 border-white">
+                              <img
+                                src="https://images.unsplash.com/photo-1523419409543-a5e549c1faa8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2.25&w=144&q=144"
+                                alt="avatar"
+                                className="h-6 w-6 rounded-full object-cover"
+                              />
+                            </span>
+                            <span className="-ml-2 rounded-full border-2 border-white">
+                              <img
+                                src="https://images.unsplash.com/photo-1523419409543-a5e549c1faa8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2.25&w=144&q=144"
+                                alt="avatar"
+                                className="h-6 w-6 rounded-full object-cover"
+                              />
+                            </span>
+                            <span className="-ml-2 rounded-full border-2 border-white">
+                              <img
+                                src="https://images.unsplash.com/photo-1523419409543-a5e549c1faa8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2.25&w=144&q=144"
+                                alt="avatar"
+                                className="h-6 w-6 rounded-full object-cover"
+                              />
+                            </span>
+                            <span className="-ml-2 rounded-full border-2 border-white">
+                              <img
+                                src="https://images.unsplash.com/photo-1523419409543-a5e549c1faa8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2.25&w=144&q=144"
+                                alt="avatar"
+                                className="h-6 w-6 rounded-full object-cover"
+                              />
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="flex w-80 flex-col rounded-md bg-transparent">
+              <h3 className="text-md px-3 pt-3 pb-1 font-mono font-medium leading-tight text-gray-700">
+                In Progress
+              </h3>
+              <div className="min-h-0 flex-1">
+                <ul className="px-3 pt-1 pb-3">
+                  <li>
+                    <a
+                      href="#"
+                      className="block rounded-md bg-white p-5 shadow"
+                    >
+                      <div>
+                        <div className="flex items-baseline justify-between">
+                          <div className="rounded bg-blue-200 px-3 py-1">
+                            <span className="text-sm font-medium leading-tight text-blue-500">
+                              DESIGN
+                            </span>
+                          </div>
+                          <div className="flex items-center text-sm text-gray-400">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              className="h-4 w-4"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke="currentColor"
+                              strokeWidth={2}
+                            >
+                              <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                d="M15.172 7l-6.586 6.586a2 2 0 102.828 2.828l6.414-6.586a4 4 0 00-5.656-5.656l-6.415 6.585a6 6 0 108.486 8.486L20.5 13"
+                              />
+                            </svg>
+                            <span>2</span>
+                          </div>
+                        </div>
+                        <div className="mt-3">
+                          <p className="text-sm text-gray-800">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Ea, saepe!
+                          </p>
+                        </div>
+                        <div className="mt-3">
+                          <div className="mt-3 flex items-center">
+                            <span className="rounded-full border-2 border-white">
+                              <img
+                                src="https://images.unsplash.com/photo-1523419409543-a5e549c1faa8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2.25&w=144&q=144"
+                                alt="avatar"
+                                className="h-6 w-6 rounded-full object-cover"
+                              />
+                            </span>
+                            <span className="-ml-2 rounded-full border-2 border-white">
+                              <img
+                                src="https://images.unsplash.com/photo-1523419409543-a5e549c1faa8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2.25&w=144&q=144"
+                                alt="avatar"
+                                className="h-6 w-6 rounded-full object-cover"
+                              />
+                            </span>
+                            <span className="-ml-2 rounded-full border-2 border-white">
+                              <img
+                                src="https://images.unsplash.com/photo-1523419409543-a5e549c1faa8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2.25&w=144&q=144"
+                                alt="avatar"
+                                className="h-6 w-6 rounded-full object-cover"
+                              />
+                            </span>
+                            <span className="-ml-2 rounded-full border-2 border-white">
+                              <img
+                                src="https://images.unsplash.com/photo-1523419409543-a5e549c1faa8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2.25&w=144&q=144"
+                                alt="avatar"
+                                className="h-6 w-6 rounded-full object-cover"
+                              />
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      className="block rounded-md bg-white p-5 shadow mt-3"
+                    >
+                      <div>
+                        <div className="flex items-baseline justify-between">
+                          <div className="rounded bg-blue-200 px-3 py-1">
+                            <span className="text-sm font-medium leading-tight text-blue-500">
+                              DESIGN
+                            </span>
+                          </div>
+                          <div className="flex items-center text-sm text-gray-400">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              className="h-4 w-4"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke="currentColor"
+                              strokeWidth={2}
+                            >
+                              <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                d="M15.172 7l-6.586 6.586a2 2 0 102.828 2.828l6.414-6.586a4 4 0 00-5.656-5.656l-6.415 6.585a6 6 0 108.486 8.486L20.5 13"
+                              />
+                            </svg>
+                            <span>2</span>
+                          </div>
+                        </div>
+                        <div className="mt-3">
+                          <p className="text-sm text-gray-800">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Ea, saepe!
+                          </p>
+                        </div>
+                        <div className="mt-3">
+                          <div className="mt-3 flex items-center">
+                            <span className="rounded-full border-2 border-white">
+                              <img
+                                src="https://images.unsplash.com/photo-1523419409543-a5e549c1faa8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2.25&w=144&q=144"
+                                alt="avatar"
+                                className="h-6 w-6 rounded-full object-cover"
+                              />
+                            </span>
+                            <span className="-ml-2 rounded-full border-2 border-white">
+                              <img
+                                src="https://images.unsplash.com/photo-1523419409543-a5e549c1faa8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2.25&w=144&q=144"
+                                alt="avatar"
+                                className="h-6 w-6 rounded-full object-cover"
+                              />
+                            </span>
+                            <span className="-ml-2 rounded-full border-2 border-white">
+                              <img
+                                src="https://images.unsplash.com/photo-1523419409543-a5e549c1faa8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2.25&w=144&q=144"
+                                alt="avatar"
+                                className="h-6 w-6 rounded-full object-cover"
+                              />
+                            </span>
+                            <span className="-ml-2 rounded-full border-2 border-white">
+                              <img
+                                src="https://images.unsplash.com/photo-1523419409543-a5e549c1faa8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2.25&w=144&q=144"
+                                alt="avatar"
+                                className="h-6 w-6 rounded-full object-cover"
+                              />
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+
+            <div className="flex w-80 flex-col rounded-md bg-transparent">
+              <h3 className="text-md px-3 pt-3 pb-1 font-mono font-medium leading-tight text-gray-700">
+                Testing
+              </h3>
+              <div className="min-h-0 flex-1">
+                <ul className="px-3 pt-1 pb-3">
+                  <li>
+                    <a
+                      href="#"
+                      className="block rounded-md bg-white p-5 shadow"
+                    >
+                      <div>
+                        <div className="flex items-baseline justify-between">
+                          <div className="rounded bg-blue-200 px-3 py-1">
+                            <span className="text-sm font-medium leading-tight text-blue-500">
+                              DESIGN
+                            </span>
+                          </div>
+                          <div className="flex items-center text-sm text-gray-400">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              className="h-4 w-4"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke="currentColor"
+                              strokeWidth={2}
+                            >
+                              <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                d="M15.172 7l-6.586 6.586a2 2 0 102.828 2.828l6.414-6.586a4 4 0 00-5.656-5.656l-6.415 6.585a6 6 0 108.486 8.486L20.5 13"
+                              />
+                            </svg>
+                            <span>2</span>
+                          </div>
+                        </div>
+                        <div className="mt-3">
+                          <p className="text-sm text-gray-800">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Ea, saepe!
+                          </p>
+                        </div>
+                        <div className="mt-3">
+                          <div className="mt-3 flex items-center">
+                            <span className="rounded-full border-2 border-white">
+                              <img
+                                src="https://images.unsplash.com/photo-1523419409543-a5e549c1faa8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2.25&w=144&q=144"
+                                alt="avatar"
+                                className="h-6 w-6 rounded-full object-cover"
+                              />
+                            </span>
+                            <span className="-ml-2 rounded-full border-2 border-white">
+                              <img
+                                src="https://images.unsplash.com/photo-1523419409543-a5e549c1faa8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2.25&w=144&q=144"
+                                alt="avatar"
+                                className="h-6 w-6 rounded-full object-cover"
+                              />
+                            </span>
+                            <span className="-ml-2 rounded-full border-2 border-white">
+                              <img
+                                src="https://images.unsplash.com/photo-1523419409543-a5e549c1faa8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2.25&w=144&q=144"
+                                alt="avatar"
+                                className="h-6 w-6 rounded-full object-cover"
+                              />
+                            </span>
+                            <span className="-ml-2 rounded-full border-2 border-white">
+                              <img
+                                src="https://images.unsplash.com/photo-1523419409543-a5e549c1faa8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2.25&w=144&q=144"
+                                alt="avatar"
+                                className="h-6 w-6 rounded-full object-cover"
+                              />
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+
+            <div className="flex w-80 flex-col rounded-md bg-transparent">
+              <h3 className="text-md px-3 pt-3 pb-1 font-mono font-medium leading-tight text-gray-700">
+                Done
+              </h3>
+              <div className="min-h-0 flex-1">
+                <ul className="px-3 pt-1 pb-3">
+                  <li>
+                    <a
+                      href="#"
+                      className="block rounded-md bg-white p-5 shadow"
+                    >
+                      <div>
+                        <div className="flex items-baseline justify-between">
+                          <div className="rounded bg-blue-200 px-3 py-1">
+                            <span className="text-sm font-medium leading-tight text-blue-500">
+                              DESIGN
+                            </span>
+                          </div>
+                          <div className="flex items-center text-sm text-gray-400">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              className="h-4 w-4"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke="currentColor"
+                              strokeWidth={2}
+                            >
+                              <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                d="M15.172 7l-6.586 6.586a2 2 0 102.828 2.828l6.414-6.586a4 4 0 00-5.656-5.656l-6.415 6.585a6 6 0 108.486 8.486L20.5 13"
+                              />
+                            </svg>
+                            <span>2</span>
+                          </div>
+                        </div>
+                        <div className="mt-3">
+                          <p className="text-sm text-gray-800">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Ea, saepe!
+                          </p>
+                        </div>
+                        <div className="mt-3">
+                          <div className="mt-3 flex items-center">
+                            <span className="rounded-full border-2 border-white">
+                              <img
+                                src="https://images.unsplash.com/photo-1523419409543-a5e549c1faa8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2.25&w=144&q=144"
+                                alt="avatar"
+                                className="h-6 w-6 rounded-full object-cover"
+                              />
+                            </span>
+                            <span className="-ml-2 rounded-full border-2 border-white">
+                              <img
+                                src="https://images.unsplash.com/photo-1523419409543-a5e549c1faa8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2.25&w=144&q=144"
+                                alt="avatar"
+                                className="h-6 w-6 rounded-full object-cover"
+                              />
+                            </span>
+                            <span className="-ml-2 rounded-full border-2 border-white">
+                              <img
+                                src="https://images.unsplash.com/photo-1523419409543-a5e549c1faa8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2.25&w=144&q=144"
+                                alt="avatar"
+                                className="h-6 w-6 rounded-full object-cover"
+                              />
+                            </span>
+                            <span className="-ml-2 rounded-full border-2 border-white">
+                              <img
+                                src="https://images.unsplash.com/photo-1523419409543-a5e549c1faa8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2.25&w=144&q=144"
+                                alt="avatar"
+                                className="h-6 w-6 rounded-full object-cover"
+                              />
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      className="block rounded-md bg-white p-5 shadow mt-3"
+                    >
+                      <div>
+                        <div className="flex items-baseline justify-between">
+                          <div className="rounded bg-blue-200 px-3 py-1">
+                            <span className="text-sm font-medium leading-tight text-blue-500">
+                              DESIGN
+                            </span>
+                          </div>
+                          <div className="flex items-center text-sm text-gray-400">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              className="h-4 w-4"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke="currentColor"
+                              strokeWidth={2}
+                            >
+                              <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                d="M15.172 7l-6.586 6.586a2 2 0 102.828 2.828l6.414-6.586a4 4 0 00-5.656-5.656l-6.415 6.585a6 6 0 108.486 8.486L20.5 13"
+                              />
+                            </svg>
+                            <span>2</span>
+                          </div>
+                        </div>
+                        <div className="mt-3">
+                          <p className="text-sm text-gray-800">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Ea, saepe!
+                          </p>
+                        </div>
+                        <div className="mt-3">
+                          <div className="mt-3 flex items-center">
+                            <span className="rounded-full border-2 border-white">
+                              <img
+                                src="https://images.unsplash.com/photo-1523419409543-a5e549c1faa8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2.25&w=144&q=144"
+                                alt="avatar"
+                                className="h-6 w-6 rounded-full object-cover"
+                              />
+                            </span>
+                            <span className="-ml-2 rounded-full border-2 border-white">
+                              <img
+                                src="https://images.unsplash.com/photo-1523419409543-a5e549c1faa8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2.25&w=144&q=144"
+                                alt="avatar"
+                                className="h-6 w-6 rounded-full object-cover"
+                              />
+                            </span>
+                            <span className="-ml-2 rounded-full border-2 border-white">
+                              <img
+                                src="https://images.unsplash.com/photo-1523419409543-a5e549c1faa8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2.25&w=144&q=144"
+                                alt="avatar"
+                                className="h-6 w-6 rounded-full object-cover"
+                              />
+                            </span>
+                            <span className="-ml-2 rounded-full border-2 border-white">
+                              <img
+                                src="https://images.unsplash.com/photo-1523419409543-a5e549c1faa8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2.25&w=144&q=144"
+                                alt="avatar"
+                                className="h-6 w-6 rounded-full object-cover"
+                              />
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </main>
+        </div>
       </div>
     </div>
   )
